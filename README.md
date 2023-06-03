@@ -6,7 +6,7 @@ Made with ❤️ using
   </a>
 
 ### Description
-Such as the name suggests this app will generate a new quote everytime a user waits 10 - 20 seconds or when the user clicks on the 'Show another quote' button. When this button is clicked the background color also changes to a random color. Should I have the background color change when the quote automatically changes too 🤔
+Hey there! This app is designed to generate a fresh quote for you every 10-20 seconds, or whenever you click the "Show another quote" button. Whenever you hit the button, the background color changes to a random one to keep things interesting. But here's a question for you to consider: do you think the background color should change automatically when the quote changes too? Let me know your thoughts! 🤔
 
 ### Install
 
