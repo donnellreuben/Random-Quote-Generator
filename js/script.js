@@ -62,6 +62,11 @@ console.log( quotes );
  * `getRandomQuote` function
 ***/
 
+const getRandomQuote = () => {
+  let randomNumber = Math.round(Math.random() * quotes.length);
+  return quotes[randomNumber];
+};
+
 
 
 /***
