@@ -61,7 +61,9 @@ const quotes = [
 ];
 
 
-//RANDOM QUOTE 
+/*** 
+ * RANDOM QUOTE GENERATOR
+***/
 const getRandomQuote = () => {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   
@@ -74,34 +76,44 @@ const getRandomQuote = () => {
 };
 
 
-// DISPLAY QUOTE
+/*** 
+ * DISPLAY QUOTE TO HTML
+***/
 const printQuote = () => {
   let randomQuote = getRandomQuote();
-  let html = 
+  let html =
   // quote and source (aka author)
   `<p class ="quote">${randomQuote['quote']}</p>
-  <p class="source">${randomQuote['source']} 
-  `;
-  
+  <p class="source">${randomQuote['source']}`;
+
   // citation
   if (randomQuote['citation']) {
-    html += `<span class="citation"> ${randomQuote['citation']} </span>`;
-  }
-  
-  // year
-  if (randomQuote['year']) {
-    html += `<span class="year"> ${randomQuote['year']} </span>`;
-  }
-  html += "</p>";
-  
-  // tag
-  if (randomQuote['tag']) {
-    html += `<span class="tag"> ${randomQuote['tag']} </span>`;
+    html += `<span class="citation">${randomQuote['citation']}</span>`;
   }
 
-  document.getElementById('quote-box').innerHTML = html; 
+  // year
+  if (randomQuote['year']) {
+    html += `<span class="year">${randomQuote['year']}</span>`;
+  }
+  html += "</p>";
+
+  // tag
+  if (randomQuote['tag']) {
+    html += `<span class="tag">${randomQuote['tag']}</span>`;
+  }
+
+  document.getElementById('quote-box').innerHTML = html;
 };
 
 
-// EVENT LISTENER
+
+/*** 
+ * EVENT LISTENER
+***/
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
+
+
+/*** 
+ * AUTO REFRESH
+***/
+// setInterval(printQuote, 10000);
