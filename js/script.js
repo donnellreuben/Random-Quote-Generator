@@ -116,4 +116,4 @@ document.getElementById('load-quote').addEventListener("click", printQuote, fals
 /*** 
  * AUTO REFRESH
 ***/
-// setInterval(printQuote, 10000);
+setInterval(printQuote, 10000);
