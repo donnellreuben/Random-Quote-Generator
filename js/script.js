@@ -116,4 +116,5 @@ document.getElementById('load-quote').addEventListener("click", printQuote, fals
 /*** 
  * AUTO REFRESH
 ***/
-setInterval(printQuote, 10000);
+// refresh every 10 - 20 seconds
+setInterval(printQuote, Math.round(Math.random() * 10000) + 10000 );
