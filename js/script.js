@@ -2,10 +2,10 @@
 A Random Quote Generator
 ******************************************/
 
+
 /*** 
  * QUOTES
 ***/
-
 const quotes = [
   {
     quote: "I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.",
@@ -18,7 +18,7 @@ const quotes = [
     source: "Will Ferrell"
   },
   {
-    quote: "Here's something to think about: How come you never see a headline like 'Psychic Wins Lottery'?",
+    quote: "Here's something to think about: How come you never see a headline like 'Psychic Wins Lottery' ?",
     source: "Jay Leno" 
   },
   {
@@ -51,10 +51,8 @@ const quotes = [
 ];
 
 
-/***
- * RANDOM QUOTE 
-***/
 
+//RANDOM QUOTE 
 const getRandomQuote = () => {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
@@ -62,10 +60,7 @@ const getRandomQuote = () => {
 
 
 
-/***
- * DISPLAY QUOTE
-***/
-
+// DISPLAY QUOTE
 const printQuote = () => {
   let randomQuote = getRandomQuote();
   let html = 
@@ -85,8 +80,6 @@ const printQuote = () => {
 };
 
 
-/***
- * EVENT LISTENER
-***/
 
+// EVENT LISTENER
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
