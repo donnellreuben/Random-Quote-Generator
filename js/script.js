@@ -51,13 +51,11 @@ const quotes = [
 ];
 
 
-
 //RANDOM QUOTE 
 const getRandomQuote = () => {
   let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 };
-
 
 
 // DISPLAY QUOTE
@@ -78,7 +76,6 @@ const printQuote = () => {
   html += "</p>";
   document.getElementById('quote-box').innerHTML = html; 
 };
-
 
 
 // EVENT LISTENER
