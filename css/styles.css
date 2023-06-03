@@ -1,6 +1,5 @@
 /** 
- * Treehouse FSJS Techdegree
- * Random Quote Generator - CSS
+A Random Quote Generator - CSS
  */
 
  @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&display=swap');
@@ -101,6 +100,7 @@ h1 {
   content: "—";
 }
 
+
 .citation {
   font-style: italic;
 }
@@ -144,7 +144,7 @@ h1 {
   }
 
   .quote {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .quote:before,
