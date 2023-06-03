@@ -1,5 +1,10 @@
 # Random-Quote-Generator
-Made with ❤️ using HTML, CSS, and JS
+Made with ❤️ using 
+p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=git,kubernetes,docker,c,vim" />
+  </a>
+</p>
 
 ### Install
 
