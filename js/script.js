@@ -2,6 +2,8 @@
 A Random Quote Generator
 ******************************************/
 
+// to make sure same quote doesn't display twice
+let lastRandomNumber = -1;
 
 /*** 
  * QUOTES
@@ -62,6 +64,12 @@ const quotes = [
 //RANDOM QUOTE 
 const getRandomQuote = () => {
   let randomNumber = Math.floor(Math.random() * quotes.length);
+  
+  // for not repeating same quote
+  if ( randomNumber === lastRandomNumber ) {
+    randomNumber = (randomNumber + 1) % quotes.length;
+  }
+  lastRandomNumber = randomNumber;
   return quotes[randomNumber];
 };
 
