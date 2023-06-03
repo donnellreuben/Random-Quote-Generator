@@ -1,9 +1,12 @@
 /******************************************
 A Random Background Color Generator
 ******************************************/
+
+
 let x;
 let y;
 let z;
+
 
 /*** 
  * RANDOM COLOR GENERATOR
@@ -14,7 +17,6 @@ const randomBackgroundColor = () => {
   z = Math.round(Math.random() * 255);
   return `rgb(${x}, ${y}, ${z})`;
 };
-
 
 
 /*** 

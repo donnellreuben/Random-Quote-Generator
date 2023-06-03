@@ -2,8 +2,10 @@
 A Random Quote Generator
 ******************************************/
 
+
 // to make sure same quote doesn't display twice
 let lastRandomNumber = -1;
+
 
 /*** 
  * QUOTES
@@ -104,7 +106,6 @@ const printQuote = () => {
 
   document.getElementById('quote-box').innerHTML = html;
 };
-
 
 
 /*** 
