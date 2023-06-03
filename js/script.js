@@ -46,16 +46,16 @@ const quotes = [
   }, 
   {
     quote: "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.",
-    author: "Steve Jobs"
+    source: "Steve Jobs"
   },
   {
     quote: "You miss 100% of the shots you don't take.",
-    author: "Wayne Gretzky"
+    source: "Wayne Gretzky"
   }
 
 ];
 
-console.log( quotes );
+
 
 
 /***
@@ -63,7 +63,7 @@ console.log( quotes );
 ***/
 
 const getRandomQuote = () => {
-  let randomNumber = Math.round(Math.random() * quotes.length);
+  let randomNumber = Math.floor(Math.random() * quotes.length);
   return quotes[randomNumber];
 };
 
@@ -73,6 +73,23 @@ const getRandomQuote = () => {
  * `printQuote` function
 ***/
 
+const printQuote = () => {
+  let randomQuote = getRandomQuote();
+  let html = 
+  `<p class ="quote"> ${randomQuote['quote']} </p>
+  <p class="source"> ${randomQuote['source']} 
+  `;
+  
+  if (randomQuote['citation']) {
+    html += `<span class="citation"> ${randomQuote['citation']} </span>`;
+  }
+
+  if (randomQuote['year']) {
+    html += `<span class="year"> ${randomQuote['year']} </span>`;
+  }
+  html += "</p>";
+  document.getElementById('quote-box').innerHTML = html; 
+};
 
 
 /***
